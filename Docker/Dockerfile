@@ -69,7 +69,7 @@ RUN apt-get install ros-humble-realsense2-* -y
 
 RUN apt-get install python3-pip -y
 RUN pip3 install ultralytics
-
+RUN pip3 install 'numpy<2'
 
 USER user
 CMD ["/bin/bash"]
